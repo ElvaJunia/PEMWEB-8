@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tugas Flexbox 8</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            margin: 0;
+        }
+
+        #main {
+            display: flex;
+            height: 60vh;
+        }
+
+        nav {
+            background: pink;
+            flex-direction: column;
+            width: 20vw;
+            display: flex;
+        }
+
+        article {
+            width: 60vw;
+            background-color: white;
+        }
+
+        aside {
+            background-color: aqua;
+            width: 20vw;
+        }
+
+        header,
+        footer {
+            background: khaki;
+            height: 20vh;
+        }
+
+        header,
+        footer,
+        article,
+        nav,
+        aside {
+            padding: 1em;
+        }
+
+        .fullupndown {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fullupndown">
+        <nav>Nav</nav>
+        <div class="header">
+            <header>Header</header>
+            <span id="main">
+                <article>Article</article>
+                <aside>Aside</aside>
+            </span>
+            <footer>Footer</footer>
+        </div>
+    </div>
+</body>
+
+</html>
